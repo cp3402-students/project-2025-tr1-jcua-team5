@@ -9,46 +9,51 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+<div class="header">
+    <h1>Baizonn Learning Center</h1>
 
-	<?php baizonn_post_thumbnail(); ?>
+    <div class="baizonn-nav">
+        <nav>
+		<li>About Center</li>
+            <li>Our Values</li>
+            <li>Programs</li>
+            <li>Schedule</li>
+            <li>Teachers Profile</li>
+            <li>Awards</li>
+            <li>Testimonials</li>
+            <li>Events</li>
+            <li>Registration</li>
+        </nav>
+    </div>
+</div>
 
-	<div class="entry-content">
-		<?php
-		the_content();
+<h2>Our Values</h2>
+<div class="entry-content">
+    <p><u>Nurturing a Love For Learning</u></p>
+	<p>For over 10 years, we have helped students achieve success in school and in life by nurturing a love for learning.
+	From primary school to junior college, our students enjoy fun, interactive and relevant lessons and are
+	empowered to think beyond the confines of the classroom. </p>
 
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'baizonn' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
+	<p>At Baizonn Learning Center, we strongly believe in Building a Strong Foundation on Grasping Maths and
+	Science Principles</p>
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
-			edit_post_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'baizonn' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					wp_kses_post( get_the_title() )
-				),
-				'<span class="edit-link">',
-				'</span>'
-			);
-			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
-</article><!-- #post-<?php the_ID(); ?> -->
+	<p><u>Preparing Students To Achieve Success</u></p>
+	<p>Developing Confident and Successful Learners.
+	Our students are at the centre of everything we do and their well-being and success in learning matter to
+	us.</p>
+
+	<p>While we educate our students, we also equip them with the right knowledge, skills and attitudes that
+	help them solve problems, think big and seek excellence.</p>
+
+	<p><u>Passionate Teachers That Make A Difference</u></p>
+	<p>At Baizonn Learning Center, our teachers motivate and nurture every student to achieve their best and
+	to build the right attitudes to ingrain a love for learning.</p>
+
+	<p>We hire teachers with the right passion and qualifications and equip them to create amazing classroom
+experiences for their students.
+We’re committed to bringing out the best in every student.</p>
+
+
+
+
+</div><!-- .entry-content -->
