@@ -57,8 +57,8 @@
 			?>
 		</nav><!-- #site-navigation -->
 		<div class="header">
-    <h1>Baizonn Learning Center</h1>
-
+    		<h1>Baizonn Learning Center</h1>
+		</div>
     <div class="baizonn-nav">
         <nav>
             <li>About Center</li>
