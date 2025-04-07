@@ -9,55 +9,27 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
+<div class="about-center">
+    <h2>About Center</h2>
+    <p>Welcome to BAIZONN</p>
+    <p>Founded in 2013, we believe in establishing a Strong Foundation build on Grasping Maths and Science
+    Principles.</p>
+    <p>Upon the strong foundation, students will apply their understanding through customised topical
+    worksheet and assessment and gain confidence to surpass their current abilities.</p>
+    <p><strong>F.A.S.T. = Firm Foundation, Apply, Surpass, Top</strong></p>
+    <p><strong>S.T.E.M : Science, Technology, Engineering, Maths</strong></p>
+    <p>Interesting educational videos:</p>
+    <p><a href="https://www.youtube.com/watch?v=igcoDFokKzU">Addition and Subtraction with Dinosaurs - Math for Kids - Math Operations</a></p>
+    <p><a href="https://www.youtube.com/watch?v=wHpqlBWtnPc">Changes in Our Climate | Basic Science | Primary 6</a></p>
 
-		if ( 'post' === get_post_type() ) :
-			?>
-			<div class="entry-meta">
-				<?php
-				baizonn_posted_on();
-				baizonn_posted_by();
-				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
+    <p><u>Academic Partner</u></p>
+    <p>NATIONAL INSTRUMENTS - Academic Channel Partner for S.T.E.M.</p>
+</div>
 
-	<?php baizonn_post_thumbnail(); ?>
+<footer>
+    <h2>Contact Us</h2>
+    <p>Hotline: (+65) 62811816 </p>
+    <p>Email : BaizonnLearning@gmail.com</p>
+    <p>Address : 1007A Upper Serangoon Road</p>
 
-	<div class="entry-content">
-		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'baizonn' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
-
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'baizonn' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php baizonn_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+</footer>
