@@ -56,4 +56,21 @@
 			);
 			?>
 		</nav><!-- #site-navigation -->
+		<div class="header">
+    <h1>Baizonn Learning Center</h1>
+
+    <div class="baizonn-nav">
+        <nav>
+            <li>About Center</li>
+            <li>Our Values</li>
+            <li>Programs</li>
+            <li>Schedule</li>
+            <li>Teachers Profile</li>
+            <li>Awards</li>
+            <li>Testimonials</li>
+            <li>Events</li>
+            <li>Registration</li>
+        </nav>
+    </div>
+</div>
 	</header><!-- #masthead -->
