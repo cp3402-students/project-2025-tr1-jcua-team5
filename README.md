@@ -4,6 +4,11 @@
 
 This WordPress theme is designed for Baizonn Learning Centre. This theme provides a clean, modern, and responsive design. It includes various customization options and is ready to be deployed on WordPress-powered websites.
 
+## Staging and Production Servers
+
+- <http://staging.cp3402.jesseprojects.net/>
+- <http://production.cp3402.jesseprojects.net/>
+
 ## Features
 
 - Fully responsive design
