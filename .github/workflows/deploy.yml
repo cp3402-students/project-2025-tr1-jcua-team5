@@ -18,7 +18,7 @@ jobs:
         run: |
           if [ "${{ github.ref }}" == "refs/heads/staging" ]; then
             echo "HOST=${{ secrets.STAGING_HOST }}" >> $GITHUB_ENV
-            echo "KEY=${{ secrets.STAGING_SSH_KEY }}" >> $GITHUB_ENV
+            echo "KEY=${{ secrets.PRODUCTION_SSH_KEY }}" >> $GITHUB_ENV
           else
             echo "HOST=${{ secrets.PRODUCTION_HOST }}" >> $GITHUB_ENV
             echo "KEY=${{ secrets.PRODUCTION_SSH_KEY }}" >> $GITHUB_ENV
@@ -32,8 +32,8 @@ jobs:
       - name: Deploy via SCP
         uses: appleboy/scp-action@v0.1.3
         with:
-          host: ${{ env.HOST }}
+          host: ${{ secrets.STAGING_HOST }}
           username: ${{ secrets.SSH_USER }}
-          key: ${{ env.KEY }}
+          key: ${{ secrets.PRODUCTION_SSH_KEY }}
           source: "./wp-content/themes/project-2025-tr1-jcua-team5"
           target: "/opt/bitnami/wordpress/wp-content/themes"
