@@ -1,0 +1,27 @@
+name: Deploy Theme to Lightsail
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      SSH_USER: ${{ secrets.SSH_USER }}
+      STAGING_HOST: ${{ secrets.STAGING_HOST }}
+      PRODUCTION_HOST: ${{ secrets.PRODUCTION_HOST }}
+      STAGING_SSH_KEY: ${{ secrets.STAGING_SSH_KEY }}
+      PRODUCTION_SSH_KEY: ${{ secrets.PRODUCTION_SSH_KEY }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Deploy via SSH
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ env.PRODUCTION_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ env.PRODUCTION_SSH_KEY }}
+          source: "./"
+          target: "/opt/bitnami/wordpress/wp-content/themes/project-2025-tr1-jcua-team5"
