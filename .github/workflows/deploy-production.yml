@@ -2,7 +2,7 @@ name: Deploy Theme to Lightsail
 
 on:
   push:
-    branches: [main]
+    branches: [production]
 
 jobs:
   deploy:
