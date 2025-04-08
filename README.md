@@ -15,7 +15,7 @@ This WordPress theme is designed for Baizonn Learning Centre. This theme provide
 - `assets/` - Contains theme assets like images, CSS, and JavaScript.
 - `inc/` - PHP files for theme functionality, such as custom post types or widgets.
 - `template-parts/` - Template files for various page layouts.
-- 'sass/' - For css styling
+- `sass/` - For css styling
 - `functions.php` - The theme's functions file for custom WordPress functionality.
 
 ## Links to Documentation
