@@ -1,0 +1,39 @@
+name: Deploy Theme to Lightsail
+on:
+  push:
+    branches: [staging, main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Debug GitHub Ref
+        run: |
+          echo "GitHub Ref: ${{ github.ref }}"
+
+      - name: Set Environment Variables
+        run: |
+          if [ "${{ github.ref }}" == "refs/heads/staging" ]; then
+            echo "HOST=${{ secrets.STAGING_HOST }}" >> $GITHUB_ENV
+            echo "KEY=${{ secrets.STAGING_SSH_KEY }}" >> $GITHUB_ENV
+          else
+            echo "HOST=${{ secrets.PRODUCTION_HOST }}" >> $GITHUB_ENV
+            echo "KEY=${{ secrets.PRODUCTION_SSH_KEY }}" >> $GITHUB_ENV
+          fi
+
+      - name: Debug Environment Variables
+        run: |
+          echo "HOST=$HOST"
+          echo "KEY=$KEY"
+
+      - name: Deploy via SCP
+        uses: appleboy/scp-action@v0.1.3
+        with:
+          host: ${{ env.HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ env.KEY }}
+          source: "./wp-content/themes/project-2025-tr1-jcua-team5"
+          target: "/opt/bitnami/wordpress/wp-content/themes"
