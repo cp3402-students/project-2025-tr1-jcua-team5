@@ -13,7 +13,7 @@
 - Ensure the 'Contact Form 7' plugin is installed for the website's functionality to be activated.
 
 4. **Development**:  
-Develop locally by editing the theme files. All changes made in the theme directory should be committed using Git.
+Develop locally by editing the theme files. All changes made in the theme directory should be committed using Git.  
 a. git add .  
 b. git commit -m "Describe the change/s"  
 c. git push origin backup-branch  
