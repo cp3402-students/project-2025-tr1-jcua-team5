@@ -1,6 +1,6 @@
 # Project Overview
 
-Welcome to our project! This repository contains all the files to set up and maintain the Baizonn Learning Centre website. The purpose of this project is to provide a user-friendly and responsive website for our customers through the implementation of the underscores theme.
+This repository contains all the files to set up and maintain the Baizonn Learning Centre website. The purpose of this project is to provide a user-friendly and responsive website for our customers through the implementation of the underscores theme.
 
 This theme has been modified specifically for Baizonn Learning Centre. It includes well-written code for future developers to understand and refine.
 Installation
