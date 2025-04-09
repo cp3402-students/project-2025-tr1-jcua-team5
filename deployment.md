@@ -14,9 +14,9 @@
 
 4. **Development**:  
 Develop locally by editing the theme files. All changes made in the theme directory should be committed using Git.
-a. git add .
-b. git commit -m "Describe the change/s"
-c. git push origin backup-branch
+a. git add . 
+b. git commit -m "Describe the change/s" 
+c. git push origin backup-branch 
 
 NOTE: If there is no 'backup-branch', create one by 'git branch backup-branch'
 
