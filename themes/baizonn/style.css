@@ -1,0 +1,488 @@
+/*--------------------------------------------------------------
+# Baizonn - Final Layout & Page Styling
+--------------------------------------------------------------*/
+
+/* Page container spacing */
+.page,
+.site-main,
+.entry-content {
+  max-width: 1100px;
+  margin: 0;  /* Ensure it's centered */
+  padding: 2rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem;
+  color: #117a65;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #117a65;
+  margin: 2rem 0 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #00775e;
+  margin-top: 1.5rem;
+}
+
+/* Paragraph text */
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Buttons */
+.wp-block-button__link,
+.button,
+input[type="submit"] {
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.wp-block-button__link:hover,
+.button:hover,
+input[type="submit"]:hover {
+}
+
+/* Tables – for schedule or fees */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #b0eacb;
+  color: #003b2f;
+}
+
+/* Teacher profiles (2-column layout styling) */
+.teachers-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.teachers-columns > div {
+  flex: 1 1 45%;
+  background: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+/* Testimonials */
+.testimonial {
+  background-color: #fff0f4;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+/* Footer credits */
+.site-footer {
+  background-color: #1c1c1c;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  border-top: 5px solid #117a65;
+}
+
+body,
+.page,
+.site-main,
+.entry-content {
+  background-color: white !important;
+  margin: 0 auto;  /* Ensure it’s centered */
+}
+
+/*--------------------------------------------------------------
+# Baizonn – Final Styling Pack
+--------------------------------------------------------------*/
+
+/*-------------------------------
+# Global Layout + Typography
+--------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+.page,
+.site-main,
+.entry-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/*-------------------------------
+# Headings
+--------------------------------*/
+h1 {
+  font-size: 2.5rem;
+  color: #117a65;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #117a65;
+  margin: 2rem 0 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #00775e;
+  margin-top: 1.5rem;
+}
+
+/*-------------------------------
+# Navigation Menu
+--------------------------------*/
+.main-menu {
+  background-color: #117a65;
+  padding: 1rem 2rem;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-menu li {
+  margin: 0;
+}
+
+.main-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.main-menu a:hover {
+  background-color: #0d5e4d;
+  border-radius: 6px;
+}
+
+/*-------------------------------
+# Buttons
+--------------------------------*/
+.wp-block-button__link,
+.button,
+input[type="submit"] {
+  background-color: #e91e63;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.wp-block-button__link:hover,
+.button:hover,
+input[type="submit"]:hover {
+  background-color: #c2185b;
+}
+
+/*-------------------------------
+# Tables (e.g., Class Schedule)
+--------------------------------*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+table th {
+  background-color: #b0eacb;
+  color: #003b2f;
+}
+
+/*-------------------------------
+# Teachers Layout
+--------------------------------*/
+.teachers-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.teachers-columns > div {
+  flex: 1 1 45%;
+  background: #f0f0f0;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/*-------------------------------
+# Testimonials
+--------------------------------*/
+.testimonial {
+  background-color: #fff0f4;
+  border-left: 5px solid #e91e63;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+/*-------------------------------
+# Footer
+--------------------------------*/
+.site-footer {
+  background-color: #1c1c1c;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  border-top: 5px solid #117a65;
+}
+
+.site-footer a {
+  color: #ccc;
+  text-decoration: underline;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+/*-------------------------------------
+# Site Header Layout & Menu Styling
+--------------------------------------*/
+.site-header {
+	background-color: #117a65;
+	padding: 1rem 0;
+	color: white;
+  }
+  
+  .header-container {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 2rem;
+  }
+  
+  .site-title {
+	font-size: 1.8rem;
+	margin: 0;
+  }
+  
+  .site-title a {
+	color: white;
+	text-decoration: none;
+  }
+  
+  .main-menu ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.25rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  .main-menu a {
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	transition: background 0.3s ease;
+	border-radius: 4px;
+  }
+  
+  .main-menu a:hover {
+	background-color: #0d5e4d;
+  }
+  
+  /* Responsive for mobile */
+  @media (max-width: 768px) {
+	.header-container {
+	  flex-direction: column;
+	  align-items: flex-start;
+	  gap: 1rem;
+	}
+  
+	.main-menu ul {
+	  flex-direction: column;
+	}
+  
+	.main-menu li {
+	  width: 100%;
+	}
+  
+	.main-menu a {
+	  display: block;
+	  width: 100%;
+	}
+  }
+
+  /*-------------------------------------
+# Full Fixed Layout: Navbar + Footer
+--------------------------------------*/
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .site-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+  }
+  
+  /* Fixed header */
+  .site-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	background-color: #117a65;
+	padding: 1rem 0;
+	color: white;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Add padding to avoid overlap */
+  .site-main,
+  .page,
+  .entry-content {
+	padding-top: 100px; /* height of header */
+	flex: 1;
+  }
+  
+  /* Header inner layout */
+  .header-container {
+	max-width: 1100px;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+  }
+  
+  .site-title {
+	font-size: 1.8rem;
+	margin: 0;
+  }
+  
+  .site-title a {
+	color: white;
+	text-decoration: none;
+  }
+  
+  /* Menu */
+  .main-menu ul {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 2rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  .main-menu li {
+	white-space: nowrap;
+  }
+  
+  .main-menu a {
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	transition: background 0.3s ease;
+	border-radius: 4px;
+  }
+  
+  .main-menu a:hover {
+	background-color: #0d5e4d;
+  }
+  
+  /* Fixed footer */
+  .site-footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #1c1c1c;
+	color: #ccc;
+	text-align: center;
+	padding: 1rem 0;
+	font-size: 0.9rem;
+	border-top: 5px solid #117a65;
+	z-index: 999;
+  }
+  
+  /* Footer overlap fix */
+  .site-main,
+  .page,
+  .entry-content {
+	padding-bottom: 80px; /* height of footer */
+  }
+  
+  /* Responsive menu layout */
+  @media (max-width: 768px) {
+	.header-container {
+	  flex-direction: column;
+	  align-items: flex-start;
+	  gap: 1rem;
+	}
+  
+	.main-menu ul {
+	  flex-direction: column;
+	}
+  
+	.main-menu a {
+	  display: block;
+	  width: 100%;
+	}
+  }
