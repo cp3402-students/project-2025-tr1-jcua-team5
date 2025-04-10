@@ -1,10 +1,11 @@
 # Deployment and Development Workflow for Baizonn
 
 ## Local Development Environment
-1. **Clone the Repository**:  
-- Clone the theme repository from GitHub by clicking the code button and copying the web URL.
-- Paste this URL into Terminal:
--  git clone https://github.com/your-repository.git
+1. **Clone the Repository**:
+- In the Github theme repository page, clone the repository by clicking the green 'Code' button. Copy the web URL.
+- Open Command Prompt and type this command:
+- git clone https://github.com/cp3402-students/project-2025-tr1-jcua-team5.git
+- Then press enter.
 
 2. **Set Up WordPress Locally**:  
 - Download and install a local development environment such as XAMPP or Local by Flywheel. Set up WordPress on your local server, ensuring the theme directory points to your local theme.
@@ -18,7 +19,7 @@ a) git add .
 b) git commit -m "Describe the change/s"  
 c) git push origin backup-branch  
 
-NOTE: If there is no 'backup-branch', create one by 'git branch backup-branch'
+NOTE: If there is no 'backup-branch', create one entering 'git branch backup-branch'
 
 ## Testing and Staging
 1. **Push to Staging**:  
