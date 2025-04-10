@@ -25,4 +25,5 @@ To customise the theme, the theme files can be edited directly. A child theme wo
 
 ## Important Documentation
 *deployment.md* - Guides new team members or developers in updating, testing and deploying themes locally before publishing them to live sites.
-theme.md: Guides developers in updating the custom theme based on 'underscores'. It highlights the key files to edit, explains design decisions and contains tips for customising styles and functionality.
+
+*theme.md*: Guides developers in updating the custom theme based on 'underscores'. It highlights the key files to edit, explains design decisions and contains tips for customising styles and functionality.
