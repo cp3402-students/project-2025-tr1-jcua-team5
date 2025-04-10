@@ -9,9 +9,9 @@ WordPress, Docker and AWS Lightsail will need to be installed and setup for this
 
 To install this theme locally, follow these steps:
 
-    Download the latest version of the theme from the GitHub repository (wp-content/themes/baizonn).
-    Upload the theme folder to WordPress installation's wp-content/themes directory.
-    Activate the theme from the WordPress admin panel.
+1. Download the latest version of the theme from the GitHub repository (wp-content/themes/baizonn).
+2. Upload the theme folder to WordPress installation's wp-content/themes directory.
+3. Activate the theme from the WordPress admin panel.
 
 ## Usage
 
@@ -21,8 +21,8 @@ This theme is designed to be customisable, with a range of options available to 
 - Custom page templates for different types of content.
 - Page templates for different types of content.
 
-To customise the theme, the theme files can be editted directly. A child theme would be more beneficial for more drastic changes to the template and content.
+To customise the theme, the theme files can be edited directly. A child theme would be more beneficial for more drastic changes to the template and content.
 
 ## Important Documentation
-deployment.md - Guides new team members or developers in updating, testing and deploying themes locally before publishing them to live sites.
-theme.md:
+*deployment.md* - Guides new team members or developers in updating, testing and deploying themes locally before publishing them to live sites.
+theme.md: Guides developers in updating the custom theme based on 'underscores'. It highlights the key files to edit, explains design decisions and contains tips for customising styles and functionality.
